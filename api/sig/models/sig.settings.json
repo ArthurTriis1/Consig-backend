@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sigs",
+  "info": {
+    "name": "SIG",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "usersCanEdit": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "sigsCanEdit"
+    },
+    "usersCanView": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "sigsCanView"
+    },
+    "content": {
+      "type": "json"
+    },
+    "security": {
+      "type": "enumeration",
+      "enum": [
+        "public",
+        "private"
+      ]
+    },
+    "theme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sig.theme"
+    }
+  }
+}

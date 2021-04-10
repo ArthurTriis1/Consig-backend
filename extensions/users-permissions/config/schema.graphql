@@ -1,0 +1,14 @@
+module.exports = {
+  definition: `
+    extend type UsersPermissionsMe {
+        sigsCanView(sort: String, limit: Int, start: Int, where: JSON): [Sig]
+        sigsCanEdit(sort: String, limit: Int, start: Int, where: JSON): [Sig]
+    }
+
+    extend input UsersPermissionsRegisterInput {
+      sigsCanView: [Int]
+      sigsCanEdit: [Int]
+    }
+
+  `
+}

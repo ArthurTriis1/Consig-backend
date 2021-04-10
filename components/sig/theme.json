@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sig_themes",
+  "info": {
+    "name": "theme",
+    "icon": "paint-brush"
+  },
+  "options": {},
+  "attributes": {
+    "primary": {
+      "type": "string"
+    },
+    "secondary": {
+      "type": "string"
+    }
+  }
+}
