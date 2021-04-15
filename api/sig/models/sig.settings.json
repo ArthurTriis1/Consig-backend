@@ -30,9 +30,6 @@
       "collection": "user",
       "via": "sigsCanView"
     },
-    "content": {
-      "type": "json"
-    },
     "security": {
       "type": "enumeration",
       "enum": [
@@ -44,6 +41,11 @@
       "type": "component",
       "repeatable": false,
       "component": "sig.theme"
+    },
+    "Layers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sig.layers"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/geo-json-layers",
+      "handler": "geo-json-layer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geo-json-layers/count",
+      "handler": "geo-json-layer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geo-json-layers/:id",
+      "handler": "geo-json-layer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/geo-json-layers",
+      "handler": "geo-json-layer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/geo-json-layers/:id",
+      "handler": "geo-json-layer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/geo-json-layers/:id",
+      "handler": "geo-json-layer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

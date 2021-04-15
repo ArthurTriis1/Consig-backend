@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "geo_json_layers",
+  "info": {
+    "name": "GeoJSONLayer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "GeoJSON": {
+      "type": "json"
+    }
+  }
+}

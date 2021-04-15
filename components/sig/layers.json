@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sig_layers",
+  "info": {
+    "name": "Layers",
+    "icon": "border-none"
+  },
+  "options": {},
+  "attributes": {
+    "geo_json_layers": {
+      "collection": "geo-json-layer"
+    }
+  }
+}
